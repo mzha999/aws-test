@@ -7,8 +7,12 @@ phases:
   build:
     commands:
       - echo "Starting build..."
+      - curl ifconfig.me
+      - curl checkip.amazonaws.com
+      - wget -qO- http://checkip.amazonaws.com
       - codebuild-breakpoint
       - echo "This will run after resuming the build"
+
 
 artifacts:
   files:
