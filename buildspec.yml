@@ -11,7 +11,7 @@ phases:
       - curl checkip.amazonaws.com
       - wget -qO- http://checkip.amazonaws.com
       - codebuild-breakpoint
-      - echo "This will run after resuming the build"
+      - echo "This will run after resuming the build!!!!"
 
 
 artifacts:
